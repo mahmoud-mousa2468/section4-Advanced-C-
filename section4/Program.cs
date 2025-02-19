@@ -1,6 +1,4 @@
-﻿using System.Collections;
-
-namespace section4
+﻿namespace section4
 {
     internal class Program
     {
@@ -53,6 +51,61 @@ namespace section4
             //Console.WriteLine(phoneBook.ContainsKey(1));
             //Console.WriteLine(phoneBook.Contains("booo"));
 
+            #endregion
+            #region Generic Collection-Dictionary
+            //Dictionary<int, string> phoneBook = new Dictionary<int, string>();
+
+            //phoneBook.Add(1, "mo");
+            //phoneBook.Add(2, "bo");
+            //phoneBook.Add(3, "oo");
+            //// can't accept null
+            ////phoneBook.Add(null, "oo");
+
+            //foreach (KeyValuePair<int,string> item in phoneBook)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //// return true or false
+            ////var flag = phoneBook.Remove(1);
+            //// put the removing value in result variable
+            //var flag = phoneBook.Remove(1,out string result);
+            //Console.WriteLine(flag);
+            //Console.WriteLine(result);
+
+            //phoneBook.TryAdd(1, "co");
+
+            //phoneBook.TryGetValue(1, out string R);
+            //Console.WriteLine(R);
+            #endregion
+            #region Generic Collection-hashset
+            // Generic hashTable : hashSet
+            // we use it if we want high performance and the data dosen't has keys
+            //HashSet<string> names = new HashSet<string>();
+            //names.Add("mo");
+            //names.Add("bo");
+            //names.Add("co");
+            //var flag = names.Contains("mo");
+            //Console.WriteLine(flag);
+            //foreach (var item in names)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region Generic Collection-Sorted DS -SortedDictionary
+            // same as Dictionary but sorted so it's complexety will be O(log n)
+            //SortedDictionary<int, string> pairs = new SortedDictionary<int, string>();
+            //pairs.Add(23, "bo");
+            //pairs.Add(20, "co");
+            //pairs.Add(10, "mo");
+            #endregion
+            #region Generic Collection-Sorted DS -SortedList-SortedSet
+            ////Sorted list like regular list and dictionary and it's complexity is O(logn)
+            //SortedList<int, string> pairs = new SortedList<int, string>();
+            ////pairs.SetValueAtIndex(1);
+
+            //// sortedset like hashset in c# 
+            ////it's complexity o(1)
+            //SortedSet<int> ints = new SortedSet<int>();
             #endregion
         }
     }
