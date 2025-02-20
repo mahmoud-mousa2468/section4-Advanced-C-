@@ -1,4 +1,6 @@
-﻿namespace section4
+﻿using section4.YouTube;
+
+namespace section4
 {
     internal class Program
     {
@@ -107,6 +109,83 @@
             ////it's complexity o(1)
             //SortedSet<int> ints = new SortedSet<int>();
             #endregion
+            #region Event
+            // Delegate : C# Feature
+
+            // C# Pure OOP
+
+            // Event : 
+            // 1- Functional Programming
+            // 2- Event-Driven Programming
+            #region EX01
+            //Ball ball = new Ball();
+
+
+            //Player P01 = new Player() { Name = "Messi", TeamName = "Miami" };
+            //Player P02 = new Player() { Name = "Alba", TeamName = "Miami" };
+            //Player P03 = new Player() { Name = "Pedri", TeamName = "Barcelona" };
+            //Player P04 = new Player() { Name = "Gavi", TeamName = "Barcelona" };
+            //Player P05 = new Player() { Name = "Salah", TeamName = "Barcelona" };
+
+            //Refree R01 = new Refree() { Name = "Ibrahim Nour El-Din" };
+            //Coach C01 = new Coach() { Name = "Mahmoud", TeamName = "Miami" };
+            //Coach C02 = new Coach() { Name = "Ali", TeamName = "Barcelona" };
+
+            //Using Delegate
+            //ball.BAllLocationChanged = P01.Run;
+            //ball.BAllLocationChanged += P02.Run;
+            //ball.BAllLocationChanged += P03.Run;
+            //ball.BAllLocationChanged += P04.Run;
+            //ball.BAllLocationChanged += R01.Look;
+            //ball.BAllLocationChanged += P04.Run;
+            //ball.BAllLocationChanged += C01.Order;
+            //ball.BAllLocationChanged += C02.Order;
+
+
+
+
+
+            //Using Event
+            //ball.BAllLocationChanged += P01.Run;
+            //ball.BAllLocationChanged += P02.Run;
+            //ball.BAllLocationChanged += P03.Run;
+            //ball.BAllLocationChanged += P04.Run;
+            //ball.BAllLocationChanged += R01.Look;
+            //ball.BAllLocationChanged += C01.Order;
+            //ball.BAllLocationChanged += C02.Order;
+            //ball.Location = new Location() { X = 1, Y = 1, Z = 1 };
+            //Console.WriteLine();
+
+            //ball.BAllLocationChanged -= P04.Run;
+            //ball.BAllLocationChanged += P05.Run;
+            //ball.Location = new Location() { X = 2, Y = 1, Z = 1 };
+            #endregion
+            #region Ex02
+            //Channel channel = new Channel() { Title = "ABC" };
+            //channel.AddVideo(new Video() { Title = "Title01", Description = "Des 01" });
+            //Subscriber S01 = new Subscriber() { Name = "Ahmed" };
+            //Subscriber S02 = new Subscriber() { Name = "Ali" };
+            //Subscriber S03 = new Subscriber() { Name = "Mona" };
+            //Subscriber S04 = new Subscriber() { Name = "Mohamed" };
+            //Subscriber S05 = new Subscriber() { Name = "Mariam" };
+
+
+            //channel.Uploaded += S01.Notify;
+            //channel.Uploaded += S02.Notify;
+            //channel.Uploaded += S03.Notify;
+            //channel.Uploaded += S04.Notify;
+            //channel.AddVideo(new Video() { Title = "Title02", Description = "Des 02" });
+
+
+            //Console.WriteLine("After Ahmed UnSubscribe");
+            //channel.Uploaded -= S01.Notify;
+            //channel.Uploaded += S05.Notify;
+            //channel.AddVideo(new Video() { Title = "Title03", Description = "Des 03" });
+
+            #endregion
+            #endregion
+
+
         }
     }
 }
